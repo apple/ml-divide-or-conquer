@@ -1,0 +1,22 @@
+The ACKNOWLEDGMENTS file attributes ALL third party code used within a project and makes it easy to see what software a project uses.
+
+Attributing ACKNOWLEDGMENTS file
+
+First of all, if third party code is used you'll want to append a reference to the ACKNOWLEDGMENETS file to the bottom of an existing LICENSE file. Please see documentation of this addition (and note that the PROJECTNAME must be updated), as well as an example in the FoundationDB project.
+
+ACKNOWLEDGMENTS file
+
+The ACKNOWLEDGEMENTS file itself lists all third party code that's directly referenced or copied; software down the dependency tree should not be listed. An example of an ACKNOWLEDGEMENTS file is available as a reference.
+
+The ACKNOWLEDGEMENTS file starts with some prefacing text that can be copied, as long as the project name is updated:
+
+Acknowledgements
+Portions of this FoundationDB Software may utilize the following copyrighted 
+material, the use of which is hereby acknowledged.
+
+_____________________
+Below that, third party code is referenced in the following format:
+
+Copyright holder (Project Name)
+    <Insert software license and any copyright info included in license headers>
+All third party references are listed alphabetically, based on the last name of the copyright holder. In some cases, the copyright holder may not be an individual but attributed a different way such as The Go Authors. There may also be instances in which multiple copyright holders are attributed; they should all be attributed in the ACKNOWLEDGEMENTS file.
