@@ -132,11 +132,26 @@ python3.11 run_bamb.py --model bamboogle_direct_infer_0 --dataset bambooglesanit
 ## Citation
 If you find our work useful, please consider citing us as:
 ```
-@article{wu2024divide,
-  title={Divide-or-Conquer? Which Part Should You Distill Your LLM?},
-  author={Wu, Zhuofeng and Bai, He and Zhang, Aonan and Gu, Jiatao and Vydiswaran, VG and Jaitly, Navdeep and Zhang, Yizhe},
-  journal={arXiv preprint arXiv:2402.15000},
-  year={2024}
+@inproceedings{wu-etal-2024-divide,
+    title = "Divide-or-Conquer? Which Part Should You Distill Your {LLM}?",
+    author = "Wu, Zhuofeng  and
+      Bai, Richard He  and
+      Zhang, Aonan  and
+      Gu, Jiatao  and
+      Vydiswaran, V.G.Vinod  and
+      Jaitly, Navdeep  and
+      Zhang, Yizhe",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2024",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-emnlp.145",
+    pages = "2572--2585",
+    abstract = "Recent methods have demonstrated that Large Language Models (LLMs) can solve reasoning tasks better when they are encouraged to solve subtasks of the main task first. In this paper we devise a similar strategy that breaks down reasoning tasks into a problem decomposition phase and a problem solving phase and show that the strategy is able to outperform a single stage solution. Further, we hypothesize that the decomposition should be easier to distill into a smaller model compared to the problem solving because the latter requires large amounts of domain knowledge while the former only requires learning general problem solving strategies. We propose methods to distill these two capabilities and evaluate their impact on reasoning outcomes and inference cost. We find that we can distill the problem decomposition phase and at the same time achieve good generalization across tasks, datasets, and models. However, it is harder to distill the problem solving capability without losing performance and the resulting distilled model struggles with generalization. These results indicate that by using smaller, distilled problem decomposition models in combination with problem solving LLMs we can achieve reasoning with cost-efficient inference and local adaptation.",
 }
 ```
 
